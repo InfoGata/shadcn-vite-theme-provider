@@ -4,6 +4,15 @@
   "description": "React dark mode theme provider based on shadcn/ui pattern for Vite",
   "type": "module",
   "license": "MIT",
+  "author": "InfoGata",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InfoGata/shadcn-vite-theme-provider.git"
+  },
+  "homepage": "https://github.com/InfoGata/shadcn-vite-theme-provider#readme",
+  "bugs": {
+    "url": "https://github.com/InfoGata/shadcn-vite-theme-provider/issues"
+  },
   "files": ["dist"],
   "main": "./dist/shadcn-vite-theme-provider.js",
   "module": "./dist/shadcn-vite-theme-provider.js",
