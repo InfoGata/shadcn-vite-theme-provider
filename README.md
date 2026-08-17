@@ -90,6 +90,21 @@ import type { Theme, ThemeProviderProps, ThemeProviderState } from "@infogata/sh
 - Respects system preference when set to `"system"`
 - Works with Tailwind CSS dark mode (`darkMode: "class"`)
 
+## Releasing
+
+Bump the version locally (this also creates the tag), then push it — CI builds,
+tests, publishes to npm, and cuts a GitHub Release:
+
+```bash
+npm version <patch|minor|major>
+git push --follow-tags
+```
+
+Publishing uses npm OIDC trusted publishing, so there is no `NPM_TOKEN` secret
+and provenance attestations are generated automatically. This repo and
+`.github/workflows/publish.yml` must be registered once as a trusted publisher
+under the package's npm settings.
+
 ## License
 
 MIT

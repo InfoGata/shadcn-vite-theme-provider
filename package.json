@@ -4,7 +4,7 @@
   "description": "React dark mode theme provider based on shadcn/ui pattern for Vite",
   "type": "module",
   "license": "MIT",
-  "author": "InfoGata",
+  "author": "Elijah Green",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/InfoGata/shadcn-vite-theme-provider.git"
@@ -13,6 +13,7 @@
   "bugs": {
     "url": "https://github.com/InfoGata/shadcn-vite-theme-provider/issues"
   },
+  "sideEffects": false,
   "files": [
     "dist"
   ],
@@ -56,6 +57,9 @@
     "vite-plugin-dts": "^5.0.2",
     "vitest": "^4.1.8"
   },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
   "keywords": [
     "react",
     "theme",
@@ -63,5 +67,9 @@
     "light-mode",
     "shadcn",
     "vite"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
